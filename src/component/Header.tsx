@@ -1,15 +1,14 @@
-
+import { Link } from 'react-router-dom'
 export default function Header() {
 
     return (
-        <div className="footer min-h-[8vh] max-h-[8vh] bg-white absolute w-full">
-            <div className=" grid grid-cols-5 ml-4 mr-4 max-h-[8vh]">
-                <div className="h-full text-titlexl top-0">Judah Deane</div>
-                <div className="grid grid-cols-5 text-xl col-start-4 col-span-2">
-                <div>Senior project</div>
-                <div>outlearning</div>
-                <div>la</div>
-                </div>
+        <div className=" z-100  absolute min-h-[8vh] max-h-[8vh] bg-white w-full align-middle items-center justify-center text-center content-center ">
+            <div className=" flex flex-row ml-[2vw] mr-[2vw] max-h-[8vh] justify-between items-center align-middle top-[%50]">
+                <Link to="/" className="h-full text-titlexl top-0">Judah Deane</Link>
+                <nav className="text-titlexl1 flex flex-row gap-[1vw] items-center justify-center">
+                    <Link to="/Senior-project">Senior Project</Link>
+                    <Link to="/Out Learning">Out Learning</Link>
+                </nav>
             </div>
         </div>
     );

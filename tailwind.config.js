@@ -1,11 +1,16 @@
 /** @type {import('tailwindcss').Config} */
-export default {
+module.exports = {
   content: [
     "./index.html",
     "./src/**/*.{js,ts,jsx,tsx}",
   ],
   theme: {
-    extend: {},
+    extend: {
+      backgroundImage: {
+        'header': "url('src\assets\Judah-Deane-2026.jpg')",
+        'Marc': "url('src\assets\thumbnail.jpeg')",
+      }
+    }
   },
   plugins: [],
 }
