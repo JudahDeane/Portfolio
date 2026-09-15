@@ -3,8 +3,8 @@ import Box from "./box"
 export default function Skills() {
     return (
         <div className='main-l overflow-visible'>
-            <div className='grid grid-cols-3 w-full gap-[1.5cqw] overflow-visible m-[1cqw]'>
-                <div className=' col-span-3 sm:cols-span-1 text-[2cqw] mb-[2cqw]'>
+            <div className='grid md:grid-cols-3 sm:grid-cols-2 grid-cols-1 w-full gap-[1.5cqw] overflow-visible m-[1cqw]'>
+                <div className=' sm:col-span-2 md:col-span-3 col-span-1 text-title mb-[2cqw]'>
                     Skills
                 </div>
                 <Box className="" title="Python" img="src\assets\Python-logo-notext.svg.png"/>

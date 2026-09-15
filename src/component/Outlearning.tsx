@@ -46,7 +46,7 @@ export default function Outlearning() {
                         </div>
                         <div className="col-start-1 row-start-10 flex flex-col justify-center items-center">
                             <div className="text-[clamp(10px,1.5cqw,40px)]"> 27 October 2025 - 31 October 2025 </div>
-                            <div className="text-[clamp(6.6666px,1cqw,30px)] leading-[clamp(10px,1.5cqw,40px)]"> 2025 AWS IDT workplacment for TAFE which is a work shop where companies present about topics then you build a product in teams which me and my friend got first place in.</div>
+                            <div className="text-[clamp(6.6666px,1cqw,30px)] leading-[clamp(10px,1.5cqw,40px)]"> 2025 AWS IDT workplacment for TAFE which is a work shop where companies present about topics then you build a product in teams which me and my friend got first place in. <a href="https://github.com/LiamHea09/The-Unspoken-Classroom" className=" underline text-blue-500">Github Here (Friend is maintainer)</a></div>
                         </div>
                         <div className="col-start-1 row-start-11 flex flex-col justify-center items-center">
                             <div className="text-[clamp(10px,1.5cqw,40px)]"> 27 October 2025 - 31 October 2025 </div>

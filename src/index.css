@@ -128,19 +128,19 @@
 
 
 .text-m{
-  font-size: clamp(8px,1cqw,2vw);
-  line-height: clamp(8px,1.5cqw,3vw);
+  font-size: clamp(10px,1.5vw,1vw);
+  line-height: clamp(11px,1.5vw,2vw);
 }
 .text-title{
   
- font-size:clamp(0.875rem,2cqw,1.875rem) /* 30px */;
- line-height: clamp(1.25rem,3cqw,2.25rem) /* 36px */;
+ font-size:clamp(0.875rem,2vw,3vw) /* 30px */;
+ line-height: clamp(1.25rem,3vw,4vw) /* 36px */;
 
 }
 .text-titlexl{
   
- font-size:clamp(1.8rem,4cqw,2.875rem) /* 30px */;
- line-height: clamp(1.55rem,5cqw,3.25rem) /* 36px */;
+ font-size:clamp(1.8rem,4vw,5vw) /* 30px */;
+ line-height: clamp(1.55rem,5vw,6vw) /* 36px */;
  white-space: nowrap;
  
 
