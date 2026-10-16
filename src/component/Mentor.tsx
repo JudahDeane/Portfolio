@@ -1,5 +1,6 @@
 import { useState } from "react";
-
+import marcImage from '../assets/1694688227978.jpeg'
+import drewImage from '../assets/Judah Deane and Drew Cosgrove2.jpg'
 export default function Mentor() {
   return (
     <div className="z-10 rounded-[0.75rem] bg-white p-2">
@@ -10,16 +11,16 @@ export default function Mentor() {
           <Cards
             desc="Judah has a genuine passion for robotics and is always keen to deepen his understanding. I have been particularly impressed by the relevant and thoughtful questions he asks, which demonstrate both curiosity and a real desire to understand the ideas and challenges behind robotics."
             title="Marc Carmichael"
-            image="src\\assets\\1694688227978.jpeg"
+            image={marcImage}
             className=""
           />
         </div>
 
         <div className="grid min-h-[30vh] items-center justify-center">
           <Cards
-            desc=""
+            desc=" Judah has been a thoughtful and committed student who has shown persistence in working through the challenges of his robotics project. He has shown genuine curiosity in exploring the problem space and learning the technologies within it."
             title="Drew Cosgrove"
-            image="src\\assets\\Judah Deane and Drew Cosgrove2.jpg"
+            image={drewImage}
             className=""
           />
         </div>

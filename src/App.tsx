@@ -17,9 +17,9 @@ function App() {
   return (
     <BrowserRouter>
       <div className='relative min-h-screen w-full items-center justify-center flex'>
-        <div className=' absolute top-0 z-20 w-full'>
-          <Header />
-        </div>
+        
+         
+       
         <div className='pointer-events-none absolute inset-0 z-0 overflow-hidden bg-transparent canvas1'>
           <Particles
             particleColors={["#ffffff"]}
@@ -32,7 +32,10 @@ function App() {
             disableRotation={false}
             pixelRatio={1}/>
         </div>
-          <div className=' max-h-[100vh]  min-w-[100vw] min-h-[90vh] overflow-y-auto  flex flex-col'>
+
+         
+          <div className=' max-h-[100vh]  min-w-[100vw] min-h-[100vh] overflow-y-auto  flex flex-col flex-1'>
+            <Header />
           <Routes>
             <Route path='*' element={<About />}/>
             <Route path='/' element={<About />}/>
@@ -47,3 +50,5 @@ function App() {
 }
 
 export default App
+
+
