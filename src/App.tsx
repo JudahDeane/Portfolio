@@ -7,6 +7,7 @@ import Mentor from './component/Mentor.tsx';
 import Outlearning from './component/Outlearning.tsx';
 import SeniorProject from './component/Senior_Project.tsx';
 import './index.css'
+import Qualifications from './component/Qualifications.tsx';
 function App() {
 
 
@@ -40,8 +41,9 @@ function App() {
             <Route path='*' element={<About />}/>
             <Route path='/' element={<About />}/>
             <Route path='/mentor' element={<Mentor />}/>
-            <Route path='/Out Learning' element={<Outlearning />}/>
+            <Route path='/Out-Learning' element={<Outlearning />}/>
             <Route path='/Senior-Project' element={<SeniorProject/>}/>
+            <Route path='/Qualifications' element={<Qualifications/>}/>
           </Routes>
         </div>
       </div >

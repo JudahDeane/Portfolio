@@ -1,35 +1,93 @@
+interface CardsProps {
+  image: string;
+  title: string;
+  desc: string;
+  desc1: string;
+  className?: string;
+}
 
- export default function Qualifications(){
+function Cards1({ image, title, desc1, desc, className = "" }: CardsProps) {
+  return (
+    <div
+      className={`grid w-full max-w-full select-none items-center justify-items-center rounded-[1rem] bg-white p-4 shadow-md transition-all duration-300 hover:-translate-y-1 hover:shadow-2xl h-full ${className}`}
+    >
+      {image && (
+        <img
+          src={image}
+          alt={title}
+          className="h-[220px] w-full rounded-[0.5rem] object-cover"
+        />
+      )}
 
-    return(
-          <div className="z-10 rounded-[0.75rem] bg-white p-2">
-      <div className="w-full 1 gap-3 flex flex-col">
-        <div className="text-title ">My Qualifications</div>
-           <ListBox className=""  title="Cert III in Information Technology"/> 
-           <ListBox className=""  title="Diploma in Information Technology (Ongoing)"/> 
+      <div className="pb-3 pt-3 text-center text-title font-semibold text-lg">
+        {title}
+      </div>
 
+      <div className="pb-3 pt-3 text-center text-m text-gray-600">
+        {desc1}
+      </div>
+
+      {desc && (
+        <div className="w-full overflow-hidden text-left transition-all text-m text-gray-500">
+          {desc}
         </div>
+      )}
+    </div>
+  );
+}
+
+export default function Qualifications() {
+  return (
+    <div className="z-10 rounded-[0.75rem] bg-white p-2">
+      <div className="w-full gap-3 grid grid-cols-1 p-3 justify-items-center place-items-center sm:grid-cols-3">
+        <div className="text-title col-span-1 sm:col-span-3 text-2xl font-bold mb-2">
+          My Qualifications
         </div>
-        
-    )
- }
 
-
- interface listProps{
-    className: String,
-    title:string
- }
-
-function ListBox({className, title}: listProps){
-
-    return(
-            <div className={className +" hover:translate-y-[-0.5vh] hover:shadow-2xl hover:scale-[1.04] transition-all duration-75 bg-white filter rounded-[1cqw] shadow-md  p-5  justify-center items-center grid grid-cols-3 grid-rows-1 max-h-[10vh]"}>
-          <div className="pl-5 list-disc text-left"> 
-            <ul className="list-disc">
-                <li className=" col-start-2 row-start-1">{title || "test skill"}</li>
-                
-            </ul>
-            </div>
-        </div>
-    )
+        <Cards1
+          image=""
+          title="Certificate III in Information Technology"
+          desc1="TAFE NSW Ultimo"
+          desc=""
+        />
+        <Cards1
+          image=""
+          title="Diploma in Information Technology (Ongoing)"
+          desc1="University of New England"
+          desc=""
+        />
+        <Cards1
+          image=""
+          title="1st Place Statewide"
+          desc1="IDT Virtual Work Placement"
+          desc=""
+        />
+        <Cards1
+          image=""
+          title="Bronze Duke of Edinburgh's Award"
+          desc1="South Sydney High School"
+          desc=""
+        />
+        <Cards1
+          image=""
+          title="Bronze Principal's Award"
+          desc1="South Sydney High School"
+          desc=""
+        />
+        <Cards1
+          image=""
+          title="Silver Principal's Award"
+          desc1="South Sydney High School"
+          desc=""
+        />
+        <Cards1
+          image=""
+          title="Big Picture High Achiever"
+          desc1="South Sydney High School"
+          desc=""
+          className="sm:col-start-2"
+        />
+      </div>
+    </div>
+  );
 }

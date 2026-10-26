@@ -7,8 +7,11 @@ export default function Header() {
                 <Link to="/" className="h-full text-titlexl top-0">Judah Deane</Link>
                 <nav className="text-titlexl1 flex flex-row gap-[3vw] items-center justify-center">
                     <Link to="/Senior-project">Senior Project</Link>
-                    <Link to="/Out Learning">Out Learning</Link>
+                    <Link to="/Out-Learning">Out Learning</Link>
+                    <Link to="/Qualifications">Qualifications and Awards</Link>
+
                 </nav>
+
             </div>
         </div>
     );
